@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'theme/app_theme.dart';
+import 'screens/accueil_screen.dart';
+
+/// Point d'entrée de l'application "Devoir Bénin IA".
+/// Initialise Firebase AVANT de lancer l'app (obligatoire avec Firestore).
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // NOTE : le fichier de configuration Firebase (firebase_options.dart)
+  // est généré automatiquement par la commande `flutterfire configure`.
+  await Firebase.initializeApp();
+
+  runApp(const DevoirBeninIAApp());
+}
+
+/// Widget racine de l'application.
+class DevoirBeninIAApp extends StatelessWidget {
+  const DevoirBeninIAApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Devoir Bénin IA',
+      debugShowCheckedModeBanner: false,
+      theme: AppTheme.theme,
+      home: const AccueilScreen(),
+    );
+  }
+}
