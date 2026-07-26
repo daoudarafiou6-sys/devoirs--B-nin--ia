@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "266445098169",
+    "project_id": "devoir-benin-ia",
+    "storage_bucket": "devoir-benin-ia.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266445098169:android:ca45e188a82e0954c9df68",
+        "android_client_info": {
+          "package_name": "com.devoirbenin.ia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgo7T311R8tVe6aoQ4sVzEJjt4IA5-yYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
